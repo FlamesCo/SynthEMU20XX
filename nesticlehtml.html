@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NES Emulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="main">
+    <div id="header">
+      <h1>NES Emulator</h1>
+    </div>
+    <div id="content">
+      <div id="rom-file">
+        <input type="file" id="rom-file-input" accept=".nes">
+        <button id="rom-file-select">Select ROM</button>
+      </div>
+      <div id="cpu">
+        <h2>CPU</h2>
+        <table>
+          <tr>
+            <th>Register</th>
+            <th>Value</th>
+          </tr>
+          <tr>
+            <td>A</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>X</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Y</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>SP</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>PC</td>
+            <td>0</td>
+          </tr>
+        </table>
+      </div>
+      <div id="ppu">
+        <h2>PPU</h2>
+        <table>
+          <tr>
+            <th>Register</th>
+            <th>Value</th>
+          </tr>
+          <tr>
+            <td>VRAM</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>OAM</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>CGRAM</td>
+            <td>0</td>
+          </tr>
+        </table>
+      </div>
+      <div id="controller">
+        <h2>Controller</h2>
+        <table>
+          <tr>
+            <th>Button</th>
+            <th>Pressed</th>
+          </tr>
+          <tr>
+            <td>A</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Select</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Start</td>
+            <td>false</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="footer">
+      <p>Made with ❤️ by Flames LLC</p>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
